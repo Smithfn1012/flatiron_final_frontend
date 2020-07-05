@@ -15,3 +15,10 @@ export const getPlants = () => {
         .catch(console.error)
     }
 }
+export const changePlant = (plant) => {
+    return {
+      type: CHANGE_PLANT,
+      payload: plant
+    }
+}
+  
