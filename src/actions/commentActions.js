@@ -14,3 +14,5 @@ export const getComments = () => {
       }).catch(console.error)
     }
 }
+
+let animalPics = ['./images/profile-arctic-fox.jpg', './images/profile-dumbo.jpg', './images/profile-emink.jpg', './images/profile-grizzlybear.jpg']
