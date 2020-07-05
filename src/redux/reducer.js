@@ -50,5 +50,9 @@ const reducer = (state = initialState, action) => {
             const newCommentArr = [...state.comments, action.payload];
             return { ...state, comments: newCommentArr };
         }
+        case ADD_COMMENT_PLANT: {
+            const newCommentArr = [...state.comments, action.payload];
+            return { ...state, comments: newCommentArr };
+        }
     }
 }
