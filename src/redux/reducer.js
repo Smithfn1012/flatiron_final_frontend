@@ -46,5 +46,9 @@ const reducer = (state = initialState, action) => {
         case LOAD_COMMENTS: {
             return { ...state, comments: action.payload };
         }
+        case ADD_COMMENT_ANIMAL: {
+            const newCommentArr = [...state.comments, action.payload];
+            return { ...state, comments: newCommentArr };
+        }
     }
 }
