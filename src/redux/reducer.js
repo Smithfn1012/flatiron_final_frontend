@@ -40,5 +40,8 @@ const reducer = (state = initialState, action) => {
             const newPlantArr = [...state.plants, action.payload];
             return { ...state, plants: newPlantArr };
         }
+        case LOAD_QANDA: {
+            return { ...state, questionAnswers: action.payload };
+        }
     }
 }
