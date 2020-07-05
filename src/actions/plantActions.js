@@ -21,4 +21,33 @@ export const changePlant = (plant) => {
       payload: plant
     }
 }
+export const addPlant = (plant) => {
+    return (dispatch) => {
+      return fetch('https://localhost:3001/api/v1/plants', {
+        method: 'POST',
+        headers: {
+          'Content-Type': "application/json",
+          Accept: "application/json"
+        },
+        body: JSON.stringify({
+          species: plant.species,
+          size: plant.size,
+          seed_distribution: plant.seed_distribution,
+          predators: plant.predators,
+          location: plant.location,
+          other_info: plant.other_info,
+          image: plant.image,
+          biome_id: plant.biome_id
+        })
+      })
+        .then(res=>res.json())
+        .then(plant => {
+          dispatch({
+            type: ADD_PLANT,
+            payload: plant
+          })
+        })
+        .catch(console.error)
+    }
+}
   
