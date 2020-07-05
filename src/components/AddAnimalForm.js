@@ -67,12 +67,11 @@ class AddAnimalForm extends Component {
         <hr />
 
         <Form.Field>
-        <label>Biome</label>
-          <input type="text" name="biome_id" placeholder="biome" value={this.state.biome} onChange={this.changeHandler} error />
+          <Form.Select fluid name="biome_id" label='Biome' options={options} value={this.state.value} placeholder='Biome' onChange={(e, data) => this.biomeChangeHandler(e, data)} />
         </Form.Field>
 
         <Form.Field>
-          <label>Animal Name</label>
+          <label>Species</label>
           <input type="text" name="species" placeholder="species" value={this.state.species} onChange={this.changeHandler} error />
         </Form.Field>
 
@@ -107,7 +106,7 @@ class AddAnimalForm extends Component {
         </Form.Field>
 
         <Form.Field>
-          <label>Endangered:</label>
+          <label>Endangered</label>
           <br/>
           True: <input type="radio" name="endangered" value={true} onChange={this.changeHandler} /> |
           False: <input type="radio" name="endangered" value={false} onChange={this.changeHandler} />

@@ -64,8 +64,7 @@ class AddPlantForm extends Component {
         <hr />
 
         <Form.Field>
-          <label>Biome</label>
-          <input type="text" name="biome_id" placeholder="biome" value={this.state.biome} onChange={this.changeHandler} />
+          <Form.Select fluid name="biome_id" label='Biome' options={options} value={this.state.value} placeholder='Biome' onChange={(e, data) => this.biomeChangeHandler(e, data)} />
         </Form.Field>
 
         <Form.Field>
@@ -104,7 +103,6 @@ class AddPlantForm extends Component {
         </Form.Field>
 
         <Form.Field control={Button}>Submit</Form.Field>
-
       </Form>
     )
   }
