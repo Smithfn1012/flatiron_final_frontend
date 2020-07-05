@@ -1,0 +1,3 @@
+export const LOAD_ANIMALS = 'LOAD_ANIMALS'
+export const CHANGE_ANIMAL = 'CHANGE_ANIMAL'
+export const ADD_ANIMAL = 'ADD_ANIMAL'
