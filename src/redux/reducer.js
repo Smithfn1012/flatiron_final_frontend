@@ -17,5 +17,8 @@ const reducer = (state = initialState, action) => {
         case LOAD_PLANTS: {
             return { ...state, plants: action.payload };
         }
+        case START_ADDING_BIOMES: {
+            return { ...state, loading: true };
+        }
     }
 }
