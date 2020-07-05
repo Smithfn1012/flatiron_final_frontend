@@ -43,5 +43,8 @@ const reducer = (state = initialState, action) => {
         case LOAD_QANDA: {
             return { ...state, questionAnswers: action.payload };
         }
+        case LOAD_COMMENTS: {
+            return { ...state, comments: action.payload };
+        }
     }
 }
