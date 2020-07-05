@@ -23,5 +23,8 @@ const reducer = (state = initialState, action) => {
         case LOAD_BIOMES: {
             return { ...state, loading: false, biomes: action.payload };
         }
+        case CHANGE_BIOME: {
+            return { ...state, loading: false, biomes: action.payload };
+        }
     }
 }
