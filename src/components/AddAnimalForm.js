@@ -39,3 +39,9 @@ class AddAnimalForm extends Component {
           biome_id: data.value
         })
     }
+
+    submitHandler = (e) => {
+        e.preventDefault()
+        let newAnimal = this.state
+        this.props.addAnimal(newAnimal)
+        alert(`${this.state.species} was created!`)
