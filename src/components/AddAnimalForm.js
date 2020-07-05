@@ -12,3 +12,24 @@ const options = [
   { key: 'ta', text: 'Taiga', value: 6 },
   { key: 'de', text: 'Deciduous Forest', value: 7 }
 ]
+
+class AddAnimalForm extends Component {
+
+    state = {
+      species: "",
+      lifespan: "",
+      size: "",
+      prey: "",
+      predators: "",
+      location: "",
+      other_info: "",
+      image: "",
+      endangered: "",
+      biome_id: ""
+    }
+
+    changeHandler = (e) => {
+        this.setState({
+            [e.target.name]: e.target.value
+        })
+    }
