@@ -42,4 +42,6 @@ export const addCommentAnimal = (comment) => {
           })
         }).catch(console.error)
     }
-  }
+}
+
+let plantPics = ['./images/profile-heliconia.jpg', './images/profile-mapletree.jpg', './images/profile-orchid.jpg']
