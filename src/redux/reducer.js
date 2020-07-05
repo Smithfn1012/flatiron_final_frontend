@@ -32,5 +32,9 @@ const reducer = (state = initialState, action) => {
         case CHANGE_PLANT: {
             return { ...state, chosenPlant: action.payload };
         }
+        case ADD_ANIMAL: {
+            const newAnimalArr = [...state.animals, action.payload];
+            return { ...state, animals: newAnimalArr };
+        }
     }
 }
