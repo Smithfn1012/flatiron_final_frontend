@@ -47,3 +47,28 @@ export const addCommentAnimal = (comment) => {
 let plantPics = ['./images/profile-heliconia.jpg', './images/profile-mapletree.jpg', './images/profile-orchid.jpg']
 
 let randomPlant = plantPics[Math.floor(Math.random() * plantPics.length)]
+
+export const addCommentPlant = (comment) => {
+    return dispatch => {
+      return fetch(`https://biome-atlas-backend.herokuapp.com/api/v1/plants/${comment.plant_id}/comments`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json'
+        },
+        body: JSON.stringify({
+          name: comment.name,
+          comment: comment.comment,
+          animal_id: null,
+          plant_id: comment.plant_id,
+          animal_img: randomPlant
+        })
+      }).then(res=>res.json())
+        .then(comment=>{
+          dispatch({
+            type: ADD_COMMENT_PLANT,
+            payload: comment
+          })
+        }).catch(console.error)
+    }
+}
