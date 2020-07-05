@@ -33,3 +33,9 @@ class AddAnimalForm extends Component {
             [e.target.name]: e.target.value
         })
     }
+
+    biomeChangeHandler = (e, data) => {
+        this.setState({
+          biome_id: data.value
+        })
+    }
