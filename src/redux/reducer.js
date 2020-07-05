@@ -14,5 +14,8 @@ const reducer = (state = initialState, action) => {
         case LOAD_ANIMALS: {
             return { ...state, animals: action.payload };
         }
+        case LOAD_PLANTS: {
+            return { ...state, plants: action.payload };
+        }
     }
 }
