@@ -4,7 +4,7 @@ export const ADD_PLANT = 'ADD_PLANT'
 
 export const getPlants = () => {
     return (dispatch) => {
-      return fetch('https://localhost:3001/api/v1/plants')
+      return fetch('http://localhost:3001/plants')
         .then(res=>res.json())
         .then(plants => {
           dispatch({
@@ -23,7 +23,7 @@ export const changePlant = (plant) => {
 }
 export const addPlant = (plant) => {
     return (dispatch) => {
-      return fetch('https://localhost:3001/api/v1/plants', {
+      return fetch('http://localhost:3001/plants', {
         method: 'POST',
         headers: {
           'Content-Type': "application/json",

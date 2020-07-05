@@ -4,7 +4,7 @@ export const ADD_ANIMAL = 'ADD_ANIMAL'
 
 export const getAnimals = () => {
     return (dispatch) => {
-        return fetch('https://localhost:3001/api/v1/animals')
+        return fetch('http://localhost:3001/animals')
         .then(res => res.json())
         .then(animals => {
             dispatch({
@@ -22,7 +22,7 @@ export const changeAnimal = (animal) => {
 }
 export const addAnimal = (animal) => {
     return (dispatch) => {
-        return fetch('https://localhost:3001/api/v1/animals', {
+        return fetch('http://localhost:3001/animals', {
             method: 'POST',
             headers: {
                 'Content-Type': "application/json",

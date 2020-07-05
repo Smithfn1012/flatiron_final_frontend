@@ -59,9 +59,9 @@ class NavBar extends React.Component {
               />
             </Link>
             {window.location.href ===
-              "https://biome-atlas.netlify.com/animals" ||
+              "https://github.com/Smithfn1012/Flatiron_final_frontend" ||
             window.location.href ===
-              "https://biome-atlas.netlify.com/plants" ? (
+              "https://github.com/Smithfn1012/Flatiron_final_backend" ? (
               <Menu.Menu position="right">
                 <Menu.Item>
                   <Input
@@ -139,9 +139,9 @@ class NavBar extends React.Component {
               </Dropdown.Menu>
             </Dropdown>
             {window.location.href ===
-              "https://biome-atlas.netlify.com/animals" ||
+              "https://github.com/Smithfn1012/flatiron_final_frontend" ||
             window.location.href ===
-              "https://biome-atlas.netlify.com/plants" ? (
+              "https://github.com/Smithfn1012/flatiron_final_backend" ? (
               <Menu.Menu position="right">
                 <Menu.Item>
                   <Input

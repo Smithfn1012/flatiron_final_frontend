@@ -64,11 +64,12 @@ class AddPlantForm extends Component {
         <hr />
 
         <Form.Field>
-          <Form.Select name="biome_id" fluid label='Biome' options={options} placeholder='Biome' onChange={(e, data) => this.biomeChangeHandler(e, data)} />
+          <label>Biome</label>
+          <input type="text" name="biome_id" placeholder="biome" value={this.state.biome} onChange={this.changeHandler} />
         </Form.Field>
 
         <Form.Field>
-          <label>Species</label>
+          <label>Plant Name</label>
           <input type="text" name="species" placeholder="species" value={this.state.species} onChange={this.changeHandler} />
         </Form.Field>
 
@@ -93,13 +94,13 @@ class AddPlantForm extends Component {
         </Form.Field>
 
         <Form.Field>
-        <label>Interesting Fact</label>
-        <textarea name="other_info" placeholder="Facts" value={this.state.other_info} onChange={this.changeHandler} />
+          <label>Image</label>
+          <input type="text" name="image" placeholder="image" value={this.state.image} onChange={this.changeHandler} />
         </Form.Field>
 
         <Form.Field>
-          <label>Image</label>
-          <input type="text" name="image" placeholder="image" value={this.state.image} onChange={this.changeHandler} />
+        <label>Interesting Fact</label>
+        <textarea name="other_info" placeholder="Facts" value={this.state.other_info} onChange={this.changeHandler} />
         </Form.Field>
 
         <Form.Field control={Button}>Submit</Form.Field>

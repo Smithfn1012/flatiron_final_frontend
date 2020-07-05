@@ -46,7 +46,7 @@ class HomeContainer extends React.Component {
     console.log(this.props.loading);
     return (
       <div>
-        <h1 className="home-header">Welcome to Biome Atlas</h1>
+        <h1 className="home-header">Biome Basics</h1>
         <Container fluid>
           <div className="slider">
             <div

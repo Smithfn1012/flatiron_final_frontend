@@ -7,7 +7,7 @@ export const getBiomes = () => {
         dispatch({
             type: START_ADDING_BIOMES
         });
-        return fetch("https://localhost:3001/api/v1/biomes")
+        return fetch("http://localhost:3001/biomes")
         .then(res => res.json())
         .then(biomes => {
             dispatch({

@@ -2,7 +2,7 @@ export const LOAD_QANDA = 'LOAD_QANDA'
 
 export const getQuestionsAnswers = () => {
   return (dispatch) => {
-    return fetch('https://localhost:3001/api/v1/question_answers')
+    return fetch('http://localhost:3001/question_answers')
       .then(res=>res.json())
       .then(questionsAnswers => {
         dispatch({
