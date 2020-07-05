@@ -54,5 +54,8 @@ const reducer = (state = initialState, action) => {
             const newCommentArr = [...state.comments, action.payload];
             return { ...state, comments: newCommentArr };
         }
+        default:
+            return state;
     }
-}
+};
+export default reducer;
