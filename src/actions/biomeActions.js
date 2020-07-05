@@ -18,3 +18,9 @@ export const getBiomes = () => {
         .catch(console.error);
     };
 };
+export const displayBiome = biome => {
+    return {
+        type: CHANGE_BIOME,
+        payload: biome
+    };
+};
