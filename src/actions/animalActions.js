@@ -5,7 +5,7 @@ export const ADD_ANIMAL = 'ADD_ANIMAL'
 export const getAnimals = () => {
     return (dispatch) => {
         return fetch('https://localhost:3001/api/v1/animals')
-        .then(res => resp.json())
+        .then(res => res.json())
         .then(animals => {
             dispatch({
                 type: LOAD_ANIMALS,
