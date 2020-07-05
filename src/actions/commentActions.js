@@ -45,3 +45,5 @@ export const addCommentAnimal = (comment) => {
 }
 
 let plantPics = ['./images/profile-heliconia.jpg', './images/profile-mapletree.jpg', './images/profile-orchid.jpg']
+
+let randomPlant = plantPics[Math.floor(Math.random() * plantPics.length)]
