@@ -15,7 +15,7 @@ export const getComments = () => {
     }
 }
 
-let animalPics = ['./images/profile-arctic-fox.jpg', './images/profile-dumbo.jpg', './images/profile-emink.jpg', './images/profile-grizzlybear.jpg']
+let animalPics = ['https://www.thoughtco.com/thmb/MVaqDmyhPWEIu9ODLskqdieLhk8=/1873x1405/smart/filters:no_upscale()/arctic-fox-468029675-5b3247a0c9e77c001a4df47a.jpg', 'https://cdna.artstation.com/p/assets/images/images/017/921/734/large/katerina-bakina-.jpg?1557856423', 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Kunawodna3.JPG/1200px-Kunawodna3.JPG', 'https://www.nationalgeographic.com/content/dam/news/2016/03/04/grizzly_delisting/01grizzlydelisting.jpg']
 
 let randomAnimal = animalPics[Math.floor(Math.random() * animalPics.length)]
 

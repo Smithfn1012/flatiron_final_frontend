@@ -13,7 +13,7 @@ const Footer = () => {
 
     <a href='https://smithfn1012.netlify.com/'><FontAwesomeIcon icon={faHome} size="2x" /></a>
 
-    <a href='https://www.linkedin.com/in/Smithfn1012/'><FontAwesomeIcon icon={faLinkedin} size="2x" /></a>
+    <a href='https://www.linkedin.com/in/felicia-smith-6a02661ab/'><FontAwesomeIcon icon={faLinkedin} size="2x" /></a>
 
     <a href='https://github.com/Smithfn1012'><FontAwesomeIcon icon={faGithub} size="2x" /></a>
 

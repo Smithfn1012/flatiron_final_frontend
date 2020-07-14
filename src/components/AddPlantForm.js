@@ -89,12 +89,12 @@ class AddPlantForm extends Component {
 
         <Form.Field>
           <label>Seed Distribution</label>
-          <input type="text" name="seed_distribution" placeholder="Seed Distribution" value={this.state.seed_distribution} onChange={this.changeHandler} />
+          <input type="text" name="seed_distribution" placeholder="seed Distribution" value={this.state.seed_distribution} onChange={this.changeHandler} />
         </Form.Field>
 
         <Form.Field>
           <label>Image</label>
-          <input type="text" name="image" placeholder="image" value={this.state.image} onChange={this.changeHandler} />
+          <input type="text" name="image" placeholder="image address" value={this.state.image} onChange={this.changeHandler} />
         </Form.Field>
 
         <Form.Field>

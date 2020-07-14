@@ -67,7 +67,7 @@ class AddAnimalForm extends Component {
         <hr />
 
         <Form.Field>
-          <Form.Select fluid name="biome_id" label='Biome' options={options} value={this.state.value} placeholder='Biome' onChange={(e, data) => this.biomeChangeHandler(e, data)} />
+          <Form.Select fluid name="biome_id" label='Biome' options={options} value={this.state.value} onChange={(e, data) => this.biomeChangeHandler(e, data)} />
         </Form.Field>
 
         <Form.Field>

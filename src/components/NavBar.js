@@ -99,6 +99,7 @@ class NavBar extends React.Component {
                     Animals
                   </Dropdown.Item>
                 </Link>
+                
                 <Link to={"/plants"}>
                   <Dropdown.Item
                     name="Plants"
@@ -108,7 +109,7 @@ class NavBar extends React.Component {
                     Plants
                   </Dropdown.Item>
                 </Link>
-
+                
                 <Link to={"/form"}>
                   <Dropdown.Item
                     name="Add Animal or Plant"
@@ -118,6 +119,7 @@ class NavBar extends React.Component {
                     Add Animal or Plant
                   </Dropdown.Item>
                 </Link>
+                
                 <Link to={"/quiz"}>
                   <Dropdown.Item
                     name="quiz"
@@ -127,6 +129,7 @@ class NavBar extends React.Component {
                     Take a Quiz
                   </Dropdown.Item>
                 </Link>
+                
                 <Link to={"/about"}>
                   <Dropdown.Item
                     name="About"

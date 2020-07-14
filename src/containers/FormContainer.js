@@ -16,7 +16,7 @@ class FormContainer extends Component {
               <AddPlantForm />
             </Grid.Column>
           </Grid>
-          <Divider vertical>OR</Divider>
+          <Divider vertical></Divider>
         </Responsive>
 
         <Responsive as={Segment} maxWidth={774}>

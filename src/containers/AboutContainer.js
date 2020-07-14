@@ -4,11 +4,11 @@ const AboutContainer = () => {
   return(
     <div raised className="about-page">
     <h1 className='about-header'>About My Flatiron Final Project</h1>
-      <p>This project was designed to teach children about the seven environmental biomes on Earth, including the animals and vegetation that inhabit them.</p>
-      <p>Utilizing a custom Rails json API, the backend database was built to securely store and send data about biomes, animals, and plants.</p>
-      <p>Implemented React and Redux to handle over 10 states, created 8 routes, and passed information between over 25 components.</p>
-      <p>Designed user interface with slider and forms with Semantic UI React, custom CSS, and React Transition Group.</p>
-      <p>Used react library Strider to create an interactive quiz.</p>
+      <p>This project was designed to teach children about the seven environmental biomes on Earth and the animals and vegetation that inhabit them.</p>
+      <p>I created a custom Rails json API, it was built to securely store and send data about biomes, animals, and plants.</p>
+      <p>The frontend in this application uses React and Redux to handle over 10 states, manage 8 routes, and pass information between over 25 components.</p>
+      <p>I also followed a tutorial and used a react library called Strider to create an interactive quiz.</p>
+      <p>Thank you for stopping by and hope you enjoy my Flatiron Final Project!</p>
     </div>
   )
 }
