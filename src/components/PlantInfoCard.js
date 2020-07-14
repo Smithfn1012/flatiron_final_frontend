@@ -26,57 +26,62 @@ class PlantInfoCard extends React.Component {
       <Accordion fluid styled>
         <Accordion.Title active={activeIndex === 0} index={0} onClick={this.handleClick}>
           <Icon name='dropdown' />
-          Species
+          Species:
         </Accordion.Title>
         <Accordion.Content active={activeIndex === 0}>
           <p>
             {plant.species}
+            <hr />
           </p>
         </Accordion.Content>
 
         <Accordion.Title active={activeIndex === 1} index={1} onClick={this.handleClick}>
           <Icon name='dropdown' />
-          Size
+          Size:
         </Accordion.Title>
         <Accordion.Content active={activeIndex === 1}>
           <p>
             {plant.size}
+            <hr />
           </p>
         </Accordion.Content>
 
         <Accordion.Title active={activeIndex === 2} index={2} onClick={this.handleClick}>
           <Icon name='dropdown' />
-          Seed Distribution
+          Seed Distribution:
         </Accordion.Title>
         <Accordion.Content active={activeIndex === 2}>
           <p>
             {plant.seed_distribution}
+            <hr />
           </p>
         </Accordion.Content>
 
         <Accordion.Title active={activeIndex === 3} index={3} onClick={this.handleClick}>
           <Icon name='dropdown' />
-          Location
+          Location:
         </Accordion.Title>
         <Accordion.Content active={activeIndex === 3}>
           <p>
             {plant.location}
+            <hr />
           </p>
         </Accordion.Content>
 
         <Accordion.Title active={activeIndex === 4} index={4} onClick={this.handleClick}>
           <Icon name='dropdown' />
-          Predators
+          Predators:
         </Accordion.Title>
         <Accordion.Content active={activeIndex === 4}>
           <p>
             {plant.predators}
+            <hr />
           </p>
         </Accordion.Content>
 
         <Accordion.Title active={activeIndex === 5} index={5} onClick={this.handleClick}>
           <Icon name='dropdown' />
-          Interesting Fact
+          Interesting Fact:
         </Accordion.Title>
         <Accordion.Content active={activeIndex === 5}>
           <p>

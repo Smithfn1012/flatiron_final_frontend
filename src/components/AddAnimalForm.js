@@ -102,7 +102,7 @@ class AddAnimalForm extends Component {
 
         <Form.Field>
           <label>Image</label>
-          <input type="text" name="image" placeholder="image" value={this.state.image} onChange={this.changeHandler} />
+          <input type="text" name="image" placeholder="image address" value={this.state.image} onChange={this.changeHandler} />
         </Form.Field>
 
         <Form.Field>

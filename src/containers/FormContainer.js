@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import AddAnimalForm from "../components/AddAnimalForm";
 import AddPlantForm from "../components/AddPlantForm";
-import { Divider, Grid, Segment, Responsive } from "semantic-ui-react";
+import { Grid, Segment, Responsive } from "semantic-ui-react";
 
 class FormContainer extends Component {
   render() {
@@ -12,19 +12,6 @@ class FormContainer extends Component {
             <Grid.Column>
               <AddAnimalForm />
             </Grid.Column>
-            <Grid.Column>
-              <AddPlantForm />
-            </Grid.Column>
-          </Grid>
-          <Divider vertical></Divider>
-        </Responsive>
-
-        <Responsive as={Segment} maxWidth={774}>
-          <Grid relaxed="very" stackable>
-            <Grid.Column>
-              <AddAnimalForm />
-            </Grid.Column>
-            <Divider horizontal>OR</Divider>
             <Grid.Column>
               <AddPlantForm />
             </Grid.Column>
