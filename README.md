@@ -1,4 +1,5 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+You can also view my custom built API for this project at https://github.com/Smithfn1012/flatiron_final_backend.
 
 ## Available Scripts
 
